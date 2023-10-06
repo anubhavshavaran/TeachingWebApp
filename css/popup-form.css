@@ -1,0 +1,86 @@
+/* Popup Styles */
+/* Mobile styles */
+.popup-form {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-white);
+    position: fixed;
+    top: 0;
+}
+
+/* Bottom Bar */
+.popup-form .popup-bottom-bar {
+    position: fixed;
+    bottom: 0;
+    background-color: var(--color-bright-green);
+    padding: 15px;
+}
+
+.popup-form a {
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+.popup-form .form-buttons {
+    justify-content: center;
+}
+.popup-form .form-buttons button {
+    width: 55%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: var(--color-black);
+    outline: none;
+    border: none;
+    color: var(--color-white);
+}
+
+/* Top Bar */
+.popup-form .popup-top-bar {
+    padding: 20px;
+    /* position: fixed; */
+}
+.popup-form .popup-top-bar .top-bar-title {
+    background-color: var(--color-white);
+    border-bottom: 1px dashed var(--color-black);
+    padding: 15px 0px;
+    top: 0;
+}
+
+/* Form */
+.popup-form .form ol {
+    background-color: var(--color-white);
+    padding: 35px 0px 30px 20px;
+    gap: 25px;
+    min-height: fit-content;
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+    .popup-form-bg {
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background-color: #000000a8;
+    }
+    .popup-form, .popup-form .popup-bottom-bar {
+        width: 50%;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+    .popup-form {
+        width: 35%;
+        height: fit-content;
+        top: initial;
+    }
+    .popup-form .popup-bottom-bar {
+        width: 100%;
+        position: relative;
+    }
+    .popup-bottom-bar .form-buttons {
+        justify-content: flex-end;
+    }
+}
