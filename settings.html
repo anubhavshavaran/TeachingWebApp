@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="shortcut icon" href="./assets/svg/admin-logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;display=swap">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/input.css">
+    <link rel="stylesheet" href="./css/admin-panel.css">
+    <link rel="stylesheet" href="./css/settings.css">
+</head>
+<body>
+    <header>
+        <div class="mobile-nav flex justify-sp-bt align-center">
+            <div class="logo flex justify-start align-center gap-10px">
+                <img src="./assets/svg/admin-logo.svg" alt="">
+                <h2>Gurupuraskar</h2>
+            </div>
+            <button type="button" title="Open Sidebar" id="hamburger-btn">
+                <img src="./assets/svg/menu-btn-white.svg" alt="">
+            </button>
+        </div>
+    </header>
+    <main>
+        <div class="tab-nav flex align-center">
+            <img src="./assets/svg/settings-logo.svg" alt="">
+            <h4>Settings</h4>
+        </div>
+        <div class="desktop-sidebar flex column justify-sp-bt align-center">
+            <div class="topbar full-width">
+                <div class="sidebar-nav full-width flex justify-center align-center">
+                    <div class="logo flex justify-start align-center gap-10px">
+                        <img src="./assets/svg/admin-logo.svg" alt="">
+                        <h2>Gurupuraskar</h2>
+                    </div>
+                </div>
+                <div class="navigations flex column justify-center align-center">
+                    <a href="admin-panel.html" class="navigation-btn full-width flex justify-start align-center gap-20px" type="button">
+                        <img src="./assets/svg/user-account-white.svg" alt="">
+                        <h4>Teachers</h4>
+                    </a>
+                    <a href="self-assess-form.html" class="navigation-btn full-width flex justify-start align-center gap-20px" type="button">
+                        <img src="./assets/svg/form-logo-white.svg" alt="">
+                        <h4>Self-Assessment Form</h4>
+                    </a>
+                    <a href="leaderboard.html" class="navigation-btn full-width flex justify-start align-center gap-20px" type="button">
+                        <img src="./assets/svg/leaderboard-white.svg" alt="">
+                        <h4>Leaderboard</h4>
+                    </a>
+                    <a href="donations.html" class="navigation-btn full-width flex justify-start align-center gap-20px" type="button">
+                        <img src="./assets/svg/donations-white.svg" alt="">
+                        <h4>Donations</h4>
+                    </a>
+                    <a href="settings.html" class="navigation-btn selected full-width flex justify-start align-center gap-20px" type="button">
+                        <img src="./assets/svg/settings-white.svg" alt="">
+                        <h4>Settings</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="bottombar full-width">
+                <button type="button" class="full-width flex justify-center align-center gap-10px">
+                    <img src="./assets/svg/logout.svg" alt="">
+                    <h3>Logout</h3>
+                </button>
+            </div>
+        </div>
+
+        <div class="settings flex column justify-center align-start">
+            <div class="settings-title">
+                <h3>SETTINGS</h3>
+            </div>
+            <div class="main-settings">
+                <h3>Gurupuraskar event</h3>
+                <div class="edit-buttons flex column justify-start align-center">
+                    <div class="edit-btn flex justify-sp-bt align-center">
+                        <h4>23/3/2024</h4>
+                        <button class="flex justify-center align-center" type="button">
+                            EDIT
+                            <img src="./assets/svg/chevron-right-blue.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="edit-btn flex justify-sp-bt align-center">
+                        <h4>10:30 AM</h4>
+                        <button class="flex justify-center align-center" type="button">
+                            EDIT
+                            <img src="./assets/svg/chevron-right-blue.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="edit-btn flex column justify-start gap-15px">
+                        <div class="row-1 flex justify-sp-bt align-center">
+                            <h4>Address:</h4>
+                            <button class="flex justify-center align-center" type="button">
+                                EDIT
+                                <img src="./assets/svg/chevron-right-blue.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="row-2">
+                            <h4>Sai Shubh Convention Centre,More Mega Store, 92/112, Bull Temple Rd, near Uma Theatre, Mahantara Lay Out, Basavanagudi, Bengaluru, Karnataka 560019</h4>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="app-settings-title">Gurupuraskar app settings</h3>
+                <div class="app-setting">
+                    <button class="lock-btn" type="button">Lock application</button>
+                    <h4 class="app-setting-title">This option locks the application and as a result, the following will happen:</h4>
+                    <ul>
+                        <li>Teachers cannot review other teachers.</li>
+                        <li>Leaderboard does not update.</li>
+                        <li>Teachers can still get / convert ARP and RP</li>
+                        <li>Teachers can still register for the event and application.</li>
+                    </ul>
+                    <h3 class="app-setting-note">NOTE: This option exists only to lock the application before the start of the main event, to let the organisers prepare for the main event.</h3>
+                </div>
+                <div class="app-setting">
+                    <button class="reset-btn" type="button">Reset cycle</button>
+                    <h4 class="app-setting-title">This option does the following:</h4>
+                    <ul>
+                        <li>Resets the leaderboard.</li>
+                        <li>Restarts onboarding for every teacher. (Teachers will need to pay the registration fee and refill their self-assessment form)</li>
+                        <li>Points are not reset.</li>
+                    </ul>
+                    <h3 class="app-setting-note">NOTE: This option is only to be used after the main event has been completed.</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="sidebar">
+        <div class="sidebar-container flex column justify-sp-bt align-center">
+            <div class="topbar full-width flex column justify-center align-end">
+                <button title="sidebar-close-btn" type="button" id="sidebar-close-btn">
+                    <img src="./assets/svg/cross.svg" alt="">
+                </button>
+                <div class="sidebar-btns full-width flex column justify-center align-center">
+                    <a href="admin-panel.html" class="sidebar-btn full-width flex justify-start align-center gap-20px">
+                        <img src="./assets/svg/user-account.svg" alt="">
+                        <h4>Teachers</h4>
+                    </a>
+                    <a href="self-assess-form.html" class="sidebar-btn full-width flex justify-start align-center gap-20px">
+                        <img src="./assets/svg/form-logo.svg" alt="">
+                        <h4>Self-Assessment Form</h4>
+                    </a>
+                    <a href="leaderboard.html" class="sidebar-btn full-width flex justify-start align-center gap-20px">
+                        <img src="./assets/svg/leaderboard.svg" alt="">
+                        <h4>Leaderboard</h4>
+                    </a>
+                    <a href="donations.html" class="sidebar-btn full-width flex justify-start align-center gap-20px">
+                        <img src="./assets/svg/donations-logo.svg" alt="">
+                        <h4>Donations</h4>
+                    </a>
+                    <a href="settings.html" class="sidebar-btn full-width flex justify-start align-center gap-20px">
+                        <img src="./assets/svg/settings-logo.svg" alt="">
+                        <h4>Settings</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="bottombar full-width">
+                <button type="button" title="logout-btn">
+                    Logout
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="prompt-popup" class="popup-bg flex justify-center align-center">
+        <div class="popup flex column justify-center align-center">
+            <h3>Block Firstname Lastname</h3>
+            <div class="popup-btns flex justify-center align-center">
+                <button>
+                    <h3 class="fw-200">Cancel</h3>
+                </button>
+                <button>
+                    <h3>Block</h3>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="form-popup" class="popup-bg flex justify-center align-center">
+        <div class="popup flex column justify-center align-center gap-20px">
+            <h3>Edit score</h3>
+            <div class="input-field full-width flex column align-start">
+                <span class="input-field-title flex full-width justify-start gap-10px">
+                    <h5>Score</h5>
+                </span>
+                <input type="text" name="" id="">
+            </div>
+            <div class="popup-btns flex justify-center align-center">
+                <button>
+                    <h3 class="fw-200">Cancel</h3>
+                </button>
+                <button>
+                    <h3>Edit</h3>
+                </button>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    document.querySelector("#hamburger-btn").addEventListener("click", () => {
+        const notifs = document.querySelector(".sidebar");
+        notifs.style.display = notifs.style.display === "flex" ? "none" : "flex";
+    });
+    document.querySelector("#sidebar-close-btn").addEventListener("click", () => {
+        const notifs = document.querySelector(".sidebar");
+        notifs.style.display = "none";
+    });
+</script>
+</html>

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;display=swap">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/dash-notifications.css">
+    <link rel="stylesheet" href="./css/dash-success.css">
+    <link rel="stylesheet" href="./css/popup-categories.css">
+    <link rel="stylesheet" href="./css/popup-form.css">
+    <link rel="stylesheet" href="./css/input.css">
+    <link rel="stylesheet" href="./css/dashboard.css">
+</head>
+<body>
+    <section class="body">
+        <header>
+            <nav class="dash-nav full-width">
+                <div class="dash-links flex justify-start align-center">
+                    <h2>Gurupuraskar</h2>
+                    <ul class="desktop-controls">
+                        <li class="selected"><a href="dashboard.html"><h4 class="fw-200">Dashboard</h4></a></li>
+                        <li><a href="dashboard-pts.html"><h4 class="fw-200">Points & Rewards</h4></a></li>
+                        <li><a href="dashboard-settings.html"><h4 class="fw-200">Settings</h4></a></li>
+                    </ul>
+                </div>
+                <div class="controls flex gap-20px">
+                    <button class="notifications-btn margin-top-5px position-relative" type="button" title="Mobile menu button">
+                        <img src="./assets/svg/bell.svg" alt="">
+                        <div class="circle flex justify-center align-center">5</div>
+                    </button>
+                    <button class="hamburger-btn" type="button" title="Mobile menu button">
+                        <img src="./assets/svg/menu-btn.svg" alt="">
+                    </button>
+                    <button type="button" class="language-dialog flex align-center justify-sp-bt">
+                        <div class="dialog-logo flex align-center justify-sp-bt gap-10px">
+                            <img src="./assets/svg/globe.svg" alt="Logo of a globe.">
+                            <h3 class="language-dialog-name fw-200">English</h3>
+                        </div>
+                        <img src="./assets/svg/chevrondown.svg" alt="Down arrow button for languages.">
+                    </button>
+                    <button type="button" class="logout-btn flex justify-center align-center">
+                        <h3 class="fw-200">Logout</h3>
+                    </button>
+                </div>
+                <div class="notifications border-radius-10px position-absolute flex column align-start">
+                    <h3>Notifications</h3>
+                    <div class="notifications-container full-width flex column gap-10px">
+                        <div class="notif border-radius-5px flex column gap-10px">
+                            <h5 class="content fw-200">You have received 70 RP from a review.</h5>
+                            <h5 class="time fw-200">10:20PM 23/05/2023</h5>
+                        </div>
+                        <div class="notif border-radius-5px flex column gap-10px">
+                            <h5 class="content fw-200">You have received 70 RP from a review.</h5>
+                            <h5 class="time fw-200">10:20PM 23/05/2023</h5>
+                        </div>
+                        <div class="notif border-radius-5px flex column gap-10px">
+                            <h5 class="content fw-200">You have received 70 RP from a review.</h5>
+                            <h5 class="time fw-200">10:20PM 23/05/2023</h5>
+                        </div>
+                        <div class="notif border-radius-5px flex column gap-10px">
+                            <h5 class="content fw-200">You have received 70 RP from a review.</h5>
+                            <h5 class="time fw-200">10:20PM 23/05/2023</h5>
+                        </div>
+                        <div class="notif border-radius-5px flex column gap-10px">
+                            <h5 class="content fw-200">You have received 70 RP from a review.</h5>
+                            <h5 class="time fw-200">10:20PM 23/05/2023</h5>
+                        </div>
+                        <div class="notif border-radius-5px flex column gap-10px">
+                            <h5 class="content fw-200">You have received 70 RP from a review.</h5>
+                            <h5 class="time fw-200">10:20PM 23/05/2023</h5>
+                        </div>
+                        <div class="notif border-radius-5px flex column gap-10px">
+                            <h5 class="content fw-200">You have received 70 RP from a review.</h5>
+                            <h5 class="time fw-200">10:20PM 23/05/2023</h5>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="dash-info flex column align-start justify-center gap-15px">
+                <h2>Hi Firstname Lastname,</h2>
+                <div class="user-address flex column gap-5px">
+                    <h4 class="fw-200">Primary School Teacher</h4>
+                    <h4 class="fw-200">Bangalore Urban</h4>
+                </div>
+                <div class="dash-score flex justify-start align-center gap-15px">
+                    <button class="score-btn" type="button">
+                        <h3>Your Score: 23,000</h3>
+                    </button>
+                    <button class="info-btn" type="button">
+                        <img src="./assets/svg/info.svg" alt="Button, on click shows the info regarding the score.">
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <article class="dashboard-reviews flex">
+                <h3 class="reviews-title fw-200">Reviews</h3>
+                <div class="reviews-container flex">
+                    <div class="review flex column gap-20px">
+                        <div class="review-title">
+                            <h3 class="fw-200">I am ready <b>for</b> review.</h3>
+                        </div>
+                        <div class="review-panel full-width flex column justify-center align-start">
+                            <div class="review-info flex align-center gap-10px">
+                                <img src="./assets/svg/green-check.svg" alt="">
+                                <h3 class="fw-200">Completed</h3>
+                            </div>
+                            <button id="ready-for-review" type="button" class="full-width flex justify-sp-ard align-center">
+                                <h3>Edit Form</h3>
+                                <img src="./assets/svg/right-arrow.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="review flex column gap-20px">
+                        <div class="review-title">
+                            <h3 class="fw-200">I am ready <b>to</b> review.</h3>
+                        </div>
+                        <div class="review-panel full-width flex column justify-center align-start">
+                            <div class="review-info full-width flex align-center justify-sp-bt">
+                                <h3 class="fw-200">1,000 / 100 ARP</h3>
+                                <img src="./assets/svg/info-gray.svg" alt="">
+                            </div>
+                            <button id="ready-to-review" type="button" class="full-width flex justify-sp-ard align-center">
+                                <h3>Edit Form</h3>
+                                <img src="./assets/svg/right-arrow.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="dashboard-leaderboard flex column justify-center">
+                <div class="leaderboard-title flex">
+                    <h3 class="fw-200">LEADERBOARD</h3>
+                    <div class="shifter flex align-center gap-15px">
+                        <h3 class="selected">All</h3>
+                        <h3>Bangalore Urban</h3>
+                    </div>
+                </div>
+                <div class="leaderboard-scores flex column align-center">
+                    <div class="score full-width first">
+                        <h4 class="score-number">1.</h4>
+                        <div class="score-details flex column gap-5px">
+                            <div class="row-1 full-width flex justify-sp-bt align-center">
+                                <h4 class="name">Subhash Chakraborty</h4>
+                                <div class="stars flex justify-center align-center gap-5px">
+                                    <img src="./assets/svg/star-gold.svg">
+                                    <img src="./assets/svg/star-gold.svg">
+                                    <img src="./assets/svg/star-gold.svg">
+                                </div>
+                            </div>
+                            <div class="row-2 full-width flex justify-sp-bt align-center">
+                                <h4 class="address fw-200">Bangalore Urban</h4>
+                                <h4 class="score-points fw-200">1,000,000 points</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="score full-width second">
+                        <h4 class="score-number">2.</h4>
+                        <div class="score-details flex column gap-5px">
+                            <div class="row-1 full-width flex justify-sp-bt align-center">
+                                <h4 class="name">Subhash Chakraborty</h4>
+                                <div class="stars flex justify-center align-center gap-5px">
+                                    <img src="./assets/svg/star-silver.svg">
+                                    <img src="./assets/svg/star-silver.svg">
+                                    <img src="./assets/svg/star-silver.svg">
+                                </div>
+                            </div>
+                            <div class="row-2 full-width flex justify-sp-bt align-center">
+                                <h4 class="address fw-200">Bangalore Urban</h4>
+                                <h4 class="score-points fw-200">1,000,000 points</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="score full-width third">
+                        <h4 class="score-number">3.</h4>
+                        <div class="score-details flex column gap-5px">
+                            <div class="row-1 full-width flex justify-sp-bt align-center">
+                                <h4 class="name">Subhash Chakraborty</h4>
+                                <div class="stars flex justify-center align-center gap-5px">
+                                    <img src="./assets/svg/star-bronze.svg">
+                                    <img src="./assets/svg/star-bronze.svg">
+                                    <img src="./assets/svg/star-bronze.svg">
+                                </div>
+                            </div>
+                            <div class="row-2 full-width flex justify-sp-bt align-center">
+                                <h4 class="address fw-200">Bangalore Urban</h4>
+                                <h4 class="score-points fw-200">1,000,000 points</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="score full-width">
+                        <h4 class="score-number">4.</h4>
+                        <div class="score-details flex column gap-5px">
+                            <div class="row-1 full-width flex justify-sp-bt align-center">
+                                <h4 class="name">Subhash Chakraborty</h4>
+                            </div>
+                            <div class="row-2 full-width flex justify-sp-bt align-center">
+                                <h4 class="address fw-200">Bangalore Urban</h4>
+                                <h4 class="score-points fw-200">1,000,000 points</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="score full-width">
+                        <h4 class="score-number">5.</h4>
+                        <div class="score-details flex column gap-5px">
+                            <div class="row-1 full-width flex justify-sp-bt align-center">
+                                <h4 class="name">Subhash Chakraborty</h4>
+                            </div>
+                            <div class="row-2 full-width flex justify-sp-bt align-center">
+                                <h4 class="address fw-200">Bangalore Urban</h4>
+                                <h4 class="score-points fw-200">1,000,000 points</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="score full-width">
+                        <h4 class="score-number">6.</h4>
+                        <div class="score-details flex column gap-5px">
+                            <div class="row-1 full-width flex justify-sp-bt align-center">
+                                <h4 class="name">Subhash Chakraborty</h4>
+                            </div>
+                            <div class="row-2 full-width flex justify-sp-bt align-center">
+                                <h4 class="address fw-200">Bangalore Urban</h4>
+                                <h4 class="score-points fw-200">1,000,000 points</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="score full-width">
+                        <h4 class="score-number">7.</h4>
+                        <div class="score-details flex column gap-5px">
+                            <div class="row-1 full-width flex justify-sp-bt align-center">
+                                <h4 class="name">Subhash Chakraborty</h4>
+                            </div>
+                            <div class="row-2 full-width flex justify-sp-bt align-center">
+                                <h4 class="address fw-200">Bangalore Urban</h4>
+                                <h4 class="score-points fw-200">1,000,000 points</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </section>
+    <section class="sidebar-bg">
+        <aside class="sidebar flex column justify-sp-bt align-center">
+            <div class="top full-width">
+                <div class="full-width flex justify-end align-center">
+                    <button id="sidebar-close-btn" type="button"><img src="./assets/svg/cross.svg" alt="Button to close the sidebar."></button>
+                </div>
+                <ul>
+                    <li><h3 class="fw-200">Dashboard</h3></li>
+                    <li><h3 class="fw-200">Points & Rewards</h3></li>
+                    <li><h3 class="fw-200">Settings</h3></li>
+                </ul>
+                <div class="language-dialog flex align-center justify-sp-bt">
+                    <div class="dialog-logo flex align-center justify-sp-bt gap-10px">
+                        <img src="./assets/svg/globe-white.svg" alt="Logo of a globe.">
+                        <h4 class="language-dialog-name">English</h4>
+                    </div>
+                    <img src="./assets/svg/chevron-right-white.svg" alt="Down arrow button for languages.">
+                </div>
+            </div>
+            <div class="bottom full-width">
+                <button type="button">Logout</button>
+            </div>
+        </aside>
+    </section>
+
+    <section class="popup-categories-bg flex">
+        <div class="popup-categories flex column">
+            <div class="popup-title flex column justify-center gap-10px">
+                <h3 class="popup-close-btn fw-200">X</h3>
+                <h3 class="title text-center">Please select any 3 roles to review from</h3>
+            </div>
+            <div class="cats-container flex">
+                <label class="cat-container" for="c1">
+                    <input type="checkbox" name="cat" id="c1">
+                    <h4 class="fw-200">Primary Teacher</h4>
+                </label>
+                <label class="cat-container" for="c1">
+                    <input type="checkbox" name="cat" id="c1">
+                    <h4 class="fw-200">Preschool Teacher</h4>
+                </label>
+                <label class="cat-container" for="c1">
+                    <input type="checkbox" name="cat" id="c1">
+                    <h4 class="fw-200">Kindergarten</h4>
+                </label>
+                <label class="cat-container selected" for="c1">
+                    <input type="checkbox" name="cat" id="c1">
+                    <h4 class="fw-200">Physical education</h4>
+                </label>
+                <label class="cat-container" for="c1">
+                    <input type="checkbox" name="cat" id="c1">
+                    <h4 class="fw-200">Music Teacher</h4>
+                </label>
+                <label class="cat-container" for="c1">
+                    <input type="checkbox" name="cat" id="c1">
+                    <h4 class="fw-200">Librarian</h4>
+                </label>
+                <label class="cat-container selected" for="c1">
+                    <input type="checkbox" name="cat" id="c1">
+                    <h4 class="fw-200">Middle school teacher</h4>
+                </label>
+                <label class="cat-container" for="c1">
+                    <input type="checkbox" name="cat" id="c1">
+                    <h4 class="fw-200">High school teacher</h4>
+                </label>
+                <label class="cat-container" for="c1">
+                    <input type="checkbox" name="cat" id="c1">
+                    <h4 class="fw-200">Art teacher</h4>
+                </label>
+                <label class="cat-container" for="c1">
+                    <input type="checkbox" name="cat" id="c1">
+                    <h4 class="fw-200">Pre-university teacher</h4>
+                </label>
+                <label class="cat-container" for="c1">
+                    <input type="checkbox" name="cat" id="c1">
+                    <h4 class="fw-200">School counselor</h4>
+                </label>
+                <label class="cat-container selected" for="c1">
+                    <input type="checkbox" name="cat" id="c1">
+                    <h4 class="fw-200">Professor</h4>
+                </label>
+                <label class="cat-container" for="c1">
+                    <input type="checkbox" name="cat" id="c1">
+                    <h4 class="fw-200">Special education</h4>
+                </label>
+                <label class="cat-container" for="c1">
+                    <input type="checkbox" name="cat" id="c1">
+                    <h4 class="fw-200">Home-school teacher</h4>
+                </label>
+                <label class="cat-container" for="c1">
+                    <input type="checkbox" name="cat" id="c1">
+                    <h4 class="fw-200">Tutor</h4>
+                </label>
+                <label class="cat-container" for="c1">
+                    <input type="checkbox" name="cat" id="c1">
+                    <h4 class="fw-200">Other</h4>
+                </label>
+            </div>
+            <div class="cats-btn full-width flex justify-center">
+                <button id="review-continue-btn" type="button" class="full-width flex justify-sp-ard align-center">
+                    <h3>Continue</h3>
+                    <img src="./assets/svg/right-arrow.svg" alt="">
+                </button>     
+            </div>
+        </div>
+    </section>
+
+    <section class="popup-form-bg flex justify-center align-center">
+        <section class="popup-form flex column">
+            <div class="popup-top-bar full-width">
+                <div class="top-bar-title full-width flex justify-sp-bt align-center">
+                    <h4>Review teacher 4325453</h4>
+                </div>
+                <div class="form">
+                    <ol class="form-inputs-list flex column align-start justify-start">
+                        <li class="input-field full-width">
+                            <span class="input-field-title flex full-width justify-start gap-10px">
+                                <h4 class="fw-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, odio velit. Eos sed laboriosam culpa.</h4>
+                            </span>
+                            <!-- <input type="text" disabled name="" id="" placeholder=""> -->
+                            <p>Pellentesque feugiat odio in diam tristique, et tristique risus accumsan. Nulla tempor ante ut vulputate tempor. Nam lobortis sem at dictum mollis.</p>
+                        </li>
+                        <li class="input-field full-width">
+                            <span class="input-field-title flex full-width justify-start gap-10px">
+                                <h4 class="fw-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, odio velit. Eos sed laboriosam culpa.</h4>
+                            </span>
+                            <p>Pellentesque feugiat odio in diam tristique, et tristique risus accumsan. Nulla tempor ante ut vulputate tempor. Nam lobortis sem at dictum mollis.</p>
+                        </li>
+                        <li class="input-field full-width">
+                            <span class="input-field-title flex full-width justify-start gap-10px">
+                                <h4 class="fw-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, odio velit. Eos sed laboriosam culpa.</h4>
+                            </span>
+                            <p>Pellentesque feugiat odio in diam tristique, et tristique risus accumsan. Nulla tempor ante ut vulputate tempor. Nam lobortis sem at dictum mollis.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="popup-bottom-bar full-width flex justify-sp-ard align-center">
+                <div class="form-buttons full-width flex align-center gap-10px">
+                    <h4 class="fw-200">Award Points (max 100)</h4>
+                    <div class="point-input flex justify-sp-bt align-center gap-10px">
+                        <input type="number">
+                        <img class="complete-form-btn" src="./assets/svg/right-arrow-black.svg">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="success-popup-bg flex justify-center align-center">
+        <section class="success-popup flex column justify-sp-bt align-center">
+            <div class="topbar full-width flex column justify-center align-center gap-10px">
+                <img src="./assets/video/success.gif" alt="Success gif">
+                <h1>78 points</h1>
+                <h4 class="fw-200">Awarded to teacher 4325453</h4>
+            </div>
+            <div class="bottombar full-width flex justify-center column align-center gap-10px">
+                <div class="full-width flex justify-sp-bt align-center">
+                    <h4 class="fw-200">922/1000 ARP</h4>
+                    <img src="./assets/svg/info-gray.svg" alt="">
+                </div>
+                <button type="button" class="full-width flex justify-sp-ard align-center">
+                    <h3>Continue</h3>
+                    <img src="./assets/svg/right-arrow.svg" alt="">
+                </button>
+                <a href="dashboard.html">Go home</a>
+            </div>
+        </section>
+    </section>
+</body>
+<script>
+    document.querySelector(".hamburger-btn").addEventListener("click", () => {
+        document.querySelector(".sidebar-bg").style.display = "flex";
+    });
+
+    document.querySelector("#sidebar-close-btn").addEventListener("click", () => {
+        document.querySelector(".sidebar-bg").style.display = "none";
+    });
+
+    document.querySelector(".notifications-btn").addEventListener("click", () => {
+        const notifs = document.querySelector(".notifications");
+        notifs.style.display = notifs.style.display === "flex" ? "none" : "flex";
+    });
+
+    document.querySelector("#ready-for-review").addEventListener("click", () => {
+        document.querySelector(".popup-categories-bg").style.display = "flex";
+    });
+
+    document.querySelector("#review-continue-btn").addEventListener("click", () => {
+        document.querySelector(".popup-categories-bg").style.display = "none";
+        document.querySelector(".popup-form-bg").style.display = "flex";
+    });
+
+    document.querySelector("#ready-to-review").addEventListener("click", () => {
+        document.querySelector(".popup-form-bg").style.display = "flex";
+    });
+
+    document.querySelector(".popup-close-btn").addEventListener("click", () => {
+        document.querySelector(".popup-categories-bg").style.display = "none";
+    });
+
+    document.querySelector(".form-close-btn").addEventListener("click", () => {
+        document.querySelector(".popup-form-bg").style.display = "none";
+    });
+
+    document.querySelector(".complete-form-btn").addEventListener("click", () => {
+        document.querySelector(".popup-form-bg").style.display = "none";
+        document.querySelector(".success-popup-bg").style.display = "flex";
+    });
+</script>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;display=swap">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/signin.css">
+</head>
+<body>
+    <section class="body">
+        <aside class="back-btn-desk">
+            <img src="./assets/svg/back-btn.svg" alt="Back button.">
+        </aside>
+        <section class="container">
+            <header>
+                <nav class="navbar flex full-width justify-sp-bt align-center">
+                    <h2>Gurupuraskar</h2>
+                    <div class="language-dialog flex align-center justify-sp-bt">
+                        <div class="dialog-logo flex align-center justify-sp-bt">
+                            <img src="./assets/svg/globe.svg" alt="Logo of a globe.">
+                            <h4 class="language-dialog-name">English</h4>
+                        </div>
+                        <img src="./assets/svg/chevrondown.svg" alt="Down arrow button for languages.">
+                    </div>
+                </nav>
+                <div class="back-btn-mobile full-width flex row align-center">
+                    <img src="./assets/svg/back-btn.svg" alt="Back button.">
+                    <h5>Log into your account</h5>
+                </div>
+            </header>
+            <article class="input-form full-width flex column align-start">
+                <h3 class="register-title">Register your account</h3>
+                <div class="input-field full-width flex column align-start gap-5px">
+                    <span class="input-field-title flex full-width justify-start gap-10px">
+                        <h5>Mobile number</h5>
+                        <h5>*</h5>
+                    </span>
+                    <input type="text" name="" id="">
+                </div>
+                <div class="input-field full-width flex column align-start gap-5px">
+                    <span class="input-field-title flex full-width justify-start gap-10px">
+                        <h5>Password</h5>
+                        <h5>*</h5>
+                    </span>
+                    <input type="password" name="" id="">
+                </div>
+                <img src="./assets/svg/captcha-test.svg" alt="">
+                <div class="form-buttons full-width flex align-center">
+                    <button id="signin-btn" class="register-btn flex justify-sp-ard align-center">
+                        <h4>Login</h4>
+                        <img src="./assets/svg/right-arrow.svg">
+                    </button>
+                    <a href="register.html">Register</a>
+                </div>
+                <a class="forgot-btn full-width" href="forgotpass.html">Forgot Password?</a>
+            </article>
+            <div class="banner-img full-width flex justify-center align-center">
+                <img src="./assets/svg/landing-page-img.svg" alt="Banner image for website.">
+            </div>
+        </section>
+    </section>
+</body>
+<script src="./scripts/script.js"></script>
+</html>

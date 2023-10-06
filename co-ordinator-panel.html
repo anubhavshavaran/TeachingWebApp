@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="shortcut icon" href="./assets/svg/admin-logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;display=swap">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/input.css">
+    <link rel="stylesheet" href="./css/admin-panel.css">
+    <link rel="stylesheet" href="./css/co-ordinator-panel.css">
+</head>
+<body>
+    <header>
+        <div class="mobile-nav flex justify-sp-bt align-center">
+            <div class="logo flex justify-start align-center gap-10px">
+                <img src="./assets/svg/admin-logo.svg" alt="">
+                <h2>Gurupuraskar</h2>
+            </div>
+            <button type="button">
+                <img src="./assets/svg/menu-btn-white.svg" alt="">
+            </button>
+        </div>
+    </header>
+    <main>
+        <div class="tab-nav flex align-center">
+            <img src="./assets/svg/user-account.svg" alt="">
+            <h4>Teachers</h4>
+            <h4 class="fw-200">1235 Teachers</h4>
+        </div>
+        <div class="searchbar-container">
+            <div class="searchbar flex justify-start align-center">
+                <img src="./assets/svg/search-icon.svg" alt="">
+                <input type="text" placeholder="Search teacher by name or ID">
+            </div>
+        </div>
+        <div class="users-list flex column">
+            <div class="user flex ">
+                <div class="user-name flex justify-start align-start gap-20px">
+                    <img src="./assets/svg/user-img.svg" alt="">
+                    <div class="flex column justify-center align-start gap-5px">
+                        <h4>Kanta Deshpande</h4>
+                        <h4 class="fw-200">High school teacher, Bangalore Urban</h4>
+                    </div>
+                </div>
+                <div class="user-id flex">
+                    <h4 class="fw-200">ID: 346873445</h4>
+                    <img src="./assets/svg/right-arrow-gray.svg" alt="">
+                </div>
+            </div>
+            <div class="user flex ">
+                <div class="user-name flex justify-start align-start gap-20px">
+                    <img src="./assets/svg/user-img.svg" alt="">
+                    <div class="flex column justify-center align-start gap-5px">
+                        <h4>Kanta Deshpande</h4>
+                        <h4 class="fw-200">High school teacher, Bangalore Urban</h4>
+                    </div>
+                </div>
+                <div class="user-id flex">
+                    <h4 class="fw-200">ID: 346873445</h4>
+                    <img src="./assets/svg/right-arrow-gray.svg" alt="">
+                </div>
+            </div>
+            <div class="user flex ">
+                <div class="user-name flex justify-start align-start gap-20px">
+                    <img src="./assets/svg/user-img.svg" alt="">
+                    <div class="flex column justify-center align-start gap-5px">
+                        <h4>Kanta Deshpande</h4>
+                        <h4 class="fw-200">High school teacher, Bangalore Urban</h4>
+                    </div>
+                </div>
+                <div class="user-id flex">
+                    <h4 class="fw-200">ID: 346873445</h4>
+                    <img src="./assets/svg/right-arrow-gray.svg" alt="">
+                </div>
+            </div>
+            <div class="user flex ">
+                <div class="user-name flex justify-start align-start gap-20px">
+                    <img src="./assets/svg/user-img.svg" alt="">
+                    <div class="flex column justify-center align-start gap-5px">
+                        <h4>Kanta Deshpande</h4>
+                        <h4 class="fw-200">High school teacher, Bangalore Urban</h4>
+                    </div>
+                </div>
+                <div class="user-id flex">
+                    <h4 class="fw-200">ID: 346873445</h4>
+                    <img src="./assets/svg/right-arrow-gray.svg" alt="">
+                </div>
+            </div>
+            <div class="user flex ">
+                <div class="user-name flex justify-start align-start gap-20px">
+                    <img src="./assets/svg/user-img.svg" alt="">
+                    <div class="flex column justify-center align-start gap-5px">
+                        <h4>Kanta Deshpande</h4>
+                        <h4 class="fw-200">High school teacher, Bangalore Urban</h4>
+                    </div>
+                </div>
+                <div class="user-id flex">
+                    <h4 class="fw-200">ID: 346873445</h4>
+                    <img src="./assets/svg/right-arrow-gray.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="user-data">
+            <div class="user-info flex column justify-center align-center">
+                <button class="close-btn"><img src="./assets/svg/close-btn-unfilled.svg" alt="Back button."></button>
+                <img class="user-img" src="./assets/svg/user-img.svg" alt="">
+                <div class="user-name flex column justify-center align-center gap-5px">
+                    <h4>Firstname Lastname</h4>
+                    <h4 class="fw-200">High School Teacher, Bangalore Urban</h4>
+                </div>
+                <div class="flex column justify-center align-center gap-10px">
+                    <div class="flex justify-center align-center gap-15px">
+                        <img src="./assets/svg/phone-logo.svg" alt="">
+                        <h4 class="fw-200">+91 98945 34534</h4>
+                    </div>
+                    <div class="flex justify-center align-center gap-15px">
+                        <img src="./assets/svg/mail-logo.svg" alt="">
+                        <h4 class="fw-200">firstname@email.com</h4>
+                    </div>
+                </div>
+                <div class="user-info-buttons flex justify-center align-center gap-10px">
+                    <button><h3>View Account</h3></button>
+                    <button><h3>Block</h3></button>
+                    <button><img src="./assets/svg/dustbin.svg" alt=""></button>
+                </div>
+            </div>
+            <button class="sa-btn flex justify-sp-bt align-center" type="button">
+                <h3 class="fw-200">Self-Assessment</h3>
+                <div class="flex justify-sp-ard align-center gap-15px">
+                    <img src="./assets/svg/check-green.svg" alt="">
+                    <h3 class="fw-200">Completed</h3>
+                    <img src="./assets/svg/chevron-right-gray.svg" alt="">
+                </div>
+            </button>
+            <div class="user-reviews flex column justify-center align-center">
+                <div class="user-review full-width flex justify-sp-bt align-center">
+                    <h4 class="review-score">23,000</h4>
+                    <div class="flex justify-center align-center gap-10px">
+                        <button class="review-btns flex justify-center align-center gap-5px">
+                            <h3>History</h3>
+                            <img src="./assets/svg/chevron-right-blue.svg" alt="">
+                        </button>
+                        <button class="review-btns flex justify-center align-center gap-5px">
+                            <h3>Edit</h3>
+                            <img src="./assets/svg/chevron-right-blue.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="user-review full-width flex justify-sp-bt align-center">
+                    <div class="flex justify-center align-center gap-10px">
+                        <img src="./assets/svg/point-green.svg" alt="">
+                        <h3 class="fw-200">1000</h3>
+                        <h3 class="fw-200">ARP</h3>
+                    </div>
+                    <div class="flex justify-center align-center gap-10px">
+                        <button class="review-btns flex justify-center align-center gap-5px">
+                            <h3>History</h3>
+                            <img src="./assets/svg/chevron-right-blue.svg" alt="">
+                        </button>
+                        <button class="review-btns flex justify-center align-center gap-5px">
+                            <h3>Edit</h3>
+                            <img src="./assets/svg/chevron-right-blue.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="user-review full-width flex justify-sp-bt align-center">
+                    <div class="flex justify-center align-center gap-10px">
+                        <img src="./assets/svg/point-gold.svg" alt="">
+                        <h3 class="fw-200">1000</h3>
+                        <h3 class="fw-200">ARP</h3>
+                    </div>
+                    <div class="flex justify-center align-center gap-10px">
+                        <button class="review-btns flex justify-center align-center gap-5px">
+                            <h3>History</h3>
+                            <img src="./assets/svg/chevron-right-blue.svg" alt="">
+                        </button>
+                        <button class="review-btns flex justify-center align-center gap-5px">
+                            <h3>Edit</h3>
+                            <img src="./assets/svg/chevron-right-blue.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="form flex column gap-20px padding-15px">
+                <div class="input-field full-width">
+                    <span class="input-field-title flex full-width justify-start gap-10px">
+                        <h4 class="fw-200">KGID number</h4>
+                    </span>
+                    <input type="text" name="" id="" placeholder="Type your answer">
+                </div>
+                <div class="input-field full-width">
+                    <span class="input-field-title flex full-width justify-start gap-10px">
+                        <h4 class="fw-200">Cluster</h4>
+                    </span>
+                    <input type="text" name="" id="" placeholder="Type your answer">
+                </div>
+                <div class="input-field full-width">
+                    <span class="input-field-title flex full-width justify-start gap-10px">
+                        <h4 class="fw-200">Block</h4>
+                    </span>
+                    <input type="text" name="" id="" placeholder="Type your answer">
+                </div>
+            </div>
+        </div>
+
+        <div class="desktop-sidebar flex column justify-sp-bt align-center">
+            <div class="topbar full-width">
+                <div class="sidebar-nav full-width flex justify-center align-center">
+                    <div class="logo flex justify-start align-center gap-10px">
+                        <img src="./assets/svg/admin-logo.svg" alt="">
+                        <h2>Gurupuraskar</h2>
+                    </div>
+                </div>
+                <div class="navigations flex column justify-center align-center">
+                    <button class="navigation-btn selected full-width flex justify-start align-center gap-20px" type="button">
+                        <img src="./assets/svg/user-account.svg" alt="">
+                        <h4>Teachers</h4>
+                    </button>
+                    <button class="navigation-btn full-width flex justify-start align-center gap-20px" type="button">
+                        <img src="./assets/svg/referrals-white.svg" alt="">
+                        <h4>Referrals</h4>
+                    </button>
+                </div>
+            </div>
+            <div class="bottombar full-width">
+                <button type="button" class="full-width flex justify-center align-center gap-10px">
+                    <img src="./assets/svg/logout.svg" alt="">
+                    <h3>Logout</h3>
+                </button>
+            </div>
+        </div>
+
+        <div class="bottom-popup">
+            <div class="back-btns flex justify-start align-center">
+                <button type="button">
+                    <img src="./assets/svg/back-btn-unfilled.svg" alt="">
+                </button>
+                <h4>Account</h4>
+                <button type="button">
+                    <img src="./assets/svg/close-btn-unfilled.svg" alt="">
+                </button>
+            </div>
+            <div class="user-details full-width">
+                <div class="input-field full-width flex column">
+                    <h4 class="fw-200">First name</h4>
+                    <input type="text" name="" id="" placeholder="Firstname">
+                </div>
+                <div class="input-field full-width flex column">
+                    <h4 class="fw-200">Last name</h4>
+                    <input type="text" name="" id="" placeholder="Lastname">
+                </div>
+                <div class="input-field full-width flex column">
+                    <h4 class="fw-200">Job Profile</h4>
+                    <input type="text" name="" id="" placeholder="High school teacher">
+                </div>
+                <div class="input-field full-width flex column">
+                    <h4 class="fw-200">PAN or Aadhar Number</h4>
+                    <input type="text" name="" id="" placeholder="2345265823746">
+                </div>
+                <div class="input-field full-width flex column">
+                    <h4 class="fw-200">Gender</h4>
+                    <input type="text" name="" id="" placeholder="Male">
+                </div>
+                <div class="input-field full-width flex column">
+                    <h4 class="fw-200">Your District</h4>
+                    <input type="text" name="" id="" placeholder="Bangalore">
+                </div>
+                <div class="input-field full-width flex column">
+                    <h4 class="fw-200">State</h4>
+                    <input type="text" name="" id="" placeholder="Karnataka">
+                </div>
+                <div class="input-field full-width flex column">
+                    <h4 class="fw-200">Referred by</h4>
+                    <input type="text" name="" id="" placeholder="Firstname Lastname">
+                </div>
+                <div class="input-field full-width flex column">
+                    <h4 class="fw-200">KGID number</h4>
+                    <input type="text" name="" id="" placeholder="KGID number">
+                </div>
+                <div class="input-field full-width flex column">
+                    <h4 class="fw-200">Cluster</h4>
+                    <input type="text" name="" id="" placeholder="Cluster">
+                </div>
+                <div class="input-field full-width flex column">
+                    <h4 class="fw-200">Block</h4>
+                    <input type="text" name="" id="" placeholder="Block">
+                </div>
+                <div class="buttons full-width flex justify-end align-center gap-15px">
+                    <h4 class="fw-200">Cancel</h4>
+                    <button type="submit" class="flex justify-center align-center gap-20px">
+                        <h3>Save Changes</h3>
+                        <img src="./assets/svg/right-arrow.svg" alt="">
+                    </button>
+                </div>
+            </div>
+
+            <div class="points-table">
+                <div class="title">
+                    <div class="navigators flex">
+                        <button class="selected">All</button>
+                        <button class="">ARP</button>
+                        <button class="">RP</button>
+                        <button class="">Referrals</button>
+                    </div>
+                </div>
+                <table class="full-width">
+                    <thead>
+                        <tr>
+                            <th>Activity</th>
+                            <th>From</th>
+                            <th>Date</th>
+                            <th>Points</th>
+                            <th>Balance</th>
+                        </tr>
+                    </thead>
+                    <tbody class="full-width">
+                        <tr>
+                            <td>Registration</td>
+                            <td class="flex align-center gap-10px">
+                                <img src="./assets/svg/avatar-man.svg" alt="">
+                                Gurupuraskar
+                            </td>
+                            <td>20/05/2023</td>
+                            <td>+1000 ARP</td>
+                            <td>1000 ARP</td>
+                        </tr>
+                        <tr>
+                            <td>Registration</td>
+                            <td class="flex align-center gap-10px">
+                                <img src="./assets/svg/avatar-man.svg" alt="">
+                                Gurupuraskar
+                            </td>
+                            <td>20/05/2023</td>
+                            <td>+1000 ARP</td>
+                            <td>1000 ARP</td>
+                        </tr>
+                        <tr>
+                            <td>Referral points</td>
+                            <td class="flex align-center gap-10px">
+                                <img src="./assets/svg/avatar-woman.svg" alt="">
+                                Gurupuraskar
+                            </td>
+                            <td>20/05/2023</td>
+                            <td>+1000 ARP</td>
+                            <td>1000 ARP</td>
+                        </tr>
+                        <tr>
+                            <td>Referral points</td>
+                            <td class="flex align-center gap-10px">
+                                <img src="./assets/svg/avatar-woman.svg" alt="">
+                                Gurupuraskar
+                            </td>
+                            <td>20/05/2023</td>
+                            <td>+1000 ARP</td>
+                            <td>1000 ARP</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <table class="full-width transactions-table">
+                <thead>
+                    <tr>
+                        <th>Transaction</th>
+                        <th>Reference ID</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ARP Recharge</td>
+                        <td>#LKHF43509</td>
+                        <td>₹100.00</td>
+                        <td>20/05/2023</td>
+                        <td class="flex align-center gap-10px">
+                            <div class="dot red"></div>
+                            Failed
+                        </td>
+                        <td>
+                            <img src="./assets/svg/download.svg">
+                            Invoice
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ARP Recharge</td>
+                        <td>#LKHF43509</td>
+                        <td>₹100.00</td>
+                        <td>20/05/2023</td>
+                        <td class="flex align-center gap-10px">
+                            <div class="dot green"></div>
+                            Success
+                        </td>
+                        <td>
+                            <img src="./assets/svg/download.svg">
+                            Invoice
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ARP Recharge</td>
+                        <td>#LKHF43509</td>
+                        <td>₹100.00</td>
+                        <td>20/05/2023</td>
+                        <td class="flex align-center gap-10px">
+                            <div class="dot orange"></div>
+                            Pending
+                        </td>
+                        <td>
+                            <img src="./assets/svg/download.svg">
+                            Invoice
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ARP Recharge</td>
+                        <td>#LKHF43509</td>
+                        <td>₹100.00</td>
+                        <td>20/05/2023</td>
+                        <td class="flex align-center gap-10px">
+                            <div class="dot orange"></div>
+                            Pending
+                        </td>
+                        <td>
+                            <img src="./assets/svg/download.svg">
+                            Invoice
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ARP Recharge</td>
+                        <td>#LKHF43509</td>
+                        <td>₹100.00</td>
+                        <td>20/05/2023</td>
+                        <td class="flex align-center gap-10px">
+                            <div class="dot orange"></div>
+                            Pending
+                        </td>
+                        <td>
+                            <img src="./assets/svg/download.svg">
+                            Invoice
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ARP Recharge</td>
+                        <td>#LKHF43509</td>
+                        <td>₹100.00</td>
+                        <td>20/05/2023</td>
+                        <td class="flex align-center gap-10px">
+                            <div class="dot orange"></div>
+                            Pending
+                        </td>
+                        <td>
+                            <img src="./assets/svg/download.svg">
+                            Invoice
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <section class="sidebar">
+        <div class="sidebar-container flex column justify-sp-bt align-center">
+            <div class="topbar full-width flex column justify-center align-end">
+                <button title="sidebar-close-btn" type="button">
+                    <img src="./assets/svg/cross.svg" alt="">
+                </button>
+                <div class="sidebar-btns full-width flex column justify-center align-center">
+                    <div class="sidebar-btn full-width flex justify-start align-center gap-20px">
+                        <img src="./assets/svg/user-account.svg" alt="">
+                        <h4>Teachers</h4>
+                    </div>
+                    <div class="sidebar-btn full-width flex justify-start align-center gap-20px">
+                        <img src="./assets/svg/referrals-black.svg" alt="">
+                        <h4>Referrals</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="bottombar full-width">
+                <button type="button" title="logout-btn">
+                    Logout
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="prompt-popup" class="popup-bg flex justify-center align-center">
+        <div class="popup flex column justify-center align-center">
+            <h3>Block Firstname Lastname</h3>
+            <div class="popup-btns flex justify-center align-center">
+                <button>
+                    <h3 class="fw-200">Cancel</h3>
+                </button>
+                <button>
+                    <h3>Block</h3>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="form-popup" class="popup-bg flex justify-center align-center">
+        <div class="popup flex column justify-center align-center gap-20px">
+            <h3>Edit score</h3>
+            <div class="input-field full-width flex column align-start">
+                <span class="input-field-title flex full-width justify-start gap-10px">
+                    <h5>Score</h5>
+                </span>
+                <input type="text" name="" id="">
+            </div>
+            <div class="popup-btns flex justify-center align-center">
+                <button>
+                    <h3 class="fw-200">Cancel</h3>
+                </button>
+                <button>
+                    <h3>Edit</h3>
+                </button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

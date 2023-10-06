@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;display=swap">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/dash-notifications.css">
+    <link rel="stylesheet" href="./css/dash-success.css">
+    <link rel="stylesheet" href="./css/popup-categories.css">
+    <link rel="stylesheet" href="./css/popup-form.css">
+    <link rel="stylesheet" href="./css/input.css">
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <link rel="stylesheet" href="./css/dash-settings.css">
+    <link rel="stylesheet" href="./css/dashboard-pts.css">
+</head>
+<body>
+    <section class="body">
+        <header class="pts-dash-header">
+            <nav class="dash-nav full-width">
+                <div class="dash-links flex justify-start align-center">
+                    <h2>Gurupuraskar</h2>
+                    <ul class="desktop-controls">
+                        <li><a href="dashboard.html"><h4 class="fw-200">Dashboard</h4></a></li>
+                        <li><a href="dashboard-pts.html"><h4 class="fw-200">Points & Rewards</h4></a></li>
+                        <li class="selected"><a href="dashboard-settings.html"><h4 class="fw-200">Settings</h4></a></li>
+                    </ul>
+                </div>
+                <div class="controls flex gap-20px">
+                    <button class="notifications-btn margin-top-5px position-relative" type="button" title="Mobile menu button">
+                        <img src="./assets/svg/bell.svg" alt="">
+                        <div class="circle flex justify-center align-center">5</div>
+                    </button>
+                    <button class="hamburger-btn" type="button" title="Mobile menu button">
+                        <img src="./assets/svg/menu-btn.svg" alt="">
+                    </button>
+                    <button type="button" class="language-dialog flex align-center justify-sp-bt">
+                        <div class="dialog-logo flex align-center justify-sp-bt gap-10px">
+                            <img src="./assets/svg/globe.svg" alt="Logo of a globe.">
+                            <h3 class="language-dialog-name fw-200">English</h3>
+                        </div>
+                        <img src="./assets/svg/chevrondown.svg" alt="Down arrow button for languages.">
+                    </button>
+                    <button type="button" class="logout-btn flex justify-center align-center">
+                        <h3 class="fw-200">Logout</h3>
+                    </button>
+                </div>
+                <div class="notifications border-radius-10px position-absolute flex column align-start">
+                    <h3>Notifications</h3>
+                    <div class="notifications-container full-width flex column gap-10px">
+                        <div class="notif border-radius-5px flex column gap-10px">
+                            <h5 class="content fw-200">You have received 70 RP from a review.</h5>
+                            <h5 class="time fw-200">10:20PM 23/05/2023</h5>
+                        </div>
+                        <div class="notif border-radius-5px flex column gap-10px">
+                            <h5 class="content fw-200">You have received 70 RP from a review.</h5>
+                            <h5 class="time fw-200">10:20PM 23/05/2023</h5>
+                        </div>
+                        <div class="notif border-radius-5px flex column gap-10px">
+                            <h5 class="content fw-200">You have received 70 RP from a review.</h5>
+                            <h5 class="time fw-200">10:20PM 23/05/2023</h5>
+                        </div>
+                        <div class="notif border-radius-5px flex column gap-10px">
+                            <h5 class="content fw-200">You have received 70 RP from a review.</h5>
+                            <h5 class="time fw-200">10:20PM 23/05/2023</h5>
+                        </div>
+                        <div class="notif border-radius-5px flex column gap-10px">
+                            <h5 class="content fw-200">You have received 70 RP from a review.</h5>
+                            <h5 class="time fw-200">10:20PM 23/05/2023</h5>
+                        </div>
+                        <div class="notif border-radius-5px flex column gap-10px">
+                            <h5 class="content fw-200">You have received 70 RP from a review.</h5>
+                            <h5 class="time fw-200">10:20PM 23/05/2023</h5>
+                        </div>
+                        <div class="notif border-radius-5px flex column gap-10px">
+                            <h5 class="content fw-200">You have received 70 RP from a review.</h5>
+                            <h5 class="time fw-200">10:20PM 23/05/2023</h5>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="user-data flex align-center">
+                <div class="user-img">
+                    <img src="./assets/svg/avatar-man.svg" alt="The image uploaded by user.">
+                </div>
+                <div class="user-info flex justify-center align-center gap-10px">
+                    <h3 class="fw-200">Selfie</h3>
+                    <img src="./assets/svg/info-gray.svg" alt="">
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <article class="account-settings">
+                <div class="title flex">
+                    <button class="settings-toggle selected" type="button"><h3 class="fw-200">Account</h3></button>
+                    <button class="settings-toggle " type="button"><h3 class="fw-200">Transactions</h3></button>
+                </div>
+                <div class="user-contact-info full-width flex">
+                    <div class="input-field">
+                        <h4 class="fw-200">Mobile number</h4>
+                        <input type="text" name="" id="" placeholder="9567534545">
+                    </div>
+                    <div class="input-field">
+                        <h4 class="fw-200">Password</h4>
+                        <input type="text" name="" id="" placeholder="*******************">
+                    </div>
+                </div>
+                <div class="user-details full-width flex">
+                    <div class="input-field">
+                        <h4 class="fw-200">First name</h4>
+                        <input type="text" name="" id="" placeholder="Firstname">
+                    </div>
+                    <div class="input-field">
+                        <h4 class="fw-200">Last name</h4>
+                        <input type="text" name="" id="" placeholder="Lastname">
+                    </div>
+                    <div class="input-field">
+                        <h4 class="fw-200">Job Profile</h4>
+                        <input type="text" name="" id="" placeholder="High school teacher">
+                    </div>
+                    <div class="input-field">
+                        <h4 class="fw-200">PAN or Aadhar Number</h4>
+                        <input type="text" name="" id="" placeholder="2345265823746">
+                    </div>
+                    <div class="input-field">
+                        <h4 class="fw-200">Gender</h4>
+                        <input type="text" name="" id="" placeholder="Male">
+                    </div>
+                    <div class="input-field">
+                        <h4 class="fw-200">Your District</h4>
+                        <input type="text" name="" id="" placeholder="Bangalore">
+                    </div>
+                    <div class="input-field">
+                        <h4 class="fw-200">State</h4>
+                        <input type="text" name="" id="" placeholder="Karnataka">
+                    </div>
+                    <div class="input-field">
+                        <h4 class="fw-200">Referred by</h4>
+                        <input type="text" name="" id="" placeholder="Firstname Lastname">
+                    </div>
+                    <div class="input-field">
+                        <h4 class="fw-200">KGID number</h4>
+                        <input type="text" name="" id="" placeholder="KGID number">
+                    </div>
+                    <div class="input-field">
+                        <h4 class="fw-200">Cluster</h4>
+                        <input type="text" name="" id="" placeholder="Cluster">
+                    </div>
+                    <div class="input-field">
+                        <h4 class="fw-200">Block</h4>
+                        <input type="text" name="" id="" placeholder="Block">
+                    </div>
+                    <div class="buttons flex justify-center align-center gap-15px">
+                        <h4 class="fw-200">Cancel</h4>
+                        <button type="submit" class="flex justify-center align-center gap-20px">
+                            <h3 class="fw-200">Save Changes</h3>
+                            <img src="./assets/svg/right-arrow.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+
+                <table class="full-width transactions-table">
+                    <thead>
+                        <tr>
+                            <th>Transaction</th>
+                            <th>Reference ID</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ARP Recharge</td>
+                            <td>#LKHF43509</td>
+                            <td>₹100.00</td>
+                            <td>20/05/2023</td>
+                            <td class="flex align-center gap-10px">
+                                <div class="dot red"></div>
+                                Failed
+                            </td>
+                            <td>
+                                <img src="./assets/svg/download.svg">
+                                Invoice
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ARP Recharge</td>
+                            <td>#LKHF43509</td>
+                            <td>₹100.00</td>
+                            <td>20/05/2023</td>
+                            <td class="flex align-center gap-10px">
+                                <div class="dot green"></div>
+                                Success
+                            </td>
+                            <td>
+                                <img src="./assets/svg/download.svg">
+                                Invoice
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ARP Recharge</td>
+                            <td>#LKHF43509</td>
+                            <td>₹100.00</td>
+                            <td>20/05/2023</td>
+                            <td class="flex align-center gap-10px">
+                                <div class="dot orange"></div>
+                                Pending
+                            </td>
+                            <td>
+                                <img src="./assets/svg/download.svg">
+                                Invoice
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ARP Recharge</td>
+                            <td>#LKHF43509</td>
+                            <td>₹100.00</td>
+                            <td>20/05/2023</td>
+                            <td class="flex align-center gap-10px">
+                                <div class="dot orange"></div>
+                                Pending
+                            </td>
+                            <td>
+                                <img src="./assets/svg/download.svg">
+                                Invoice
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ARP Recharge</td>
+                            <td>#LKHF43509</td>
+                            <td>₹100.00</td>
+                            <td>20/05/2023</td>
+                            <td class="flex align-center gap-10px">
+                                <div class="dot orange"></div>
+                                Pending
+                            </td>
+                            <td>
+                                <img src="./assets/svg/download.svg">
+                                Invoice
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ARP Recharge</td>
+                            <td>#LKHF43509</td>
+                            <td>₹100.00</td>
+                            <td>20/05/2023</td>
+                            <td class="flex align-center gap-10px">
+                                <div class="dot orange"></div>
+                                Pending
+                            </td>
+                            <td>
+                                <img src="./assets/svg/download.svg">
+                                Invoice
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </main>
+    </section>
+    <section class="sidebar-bg">
+        <aside class="sidebar flex column justify-sp-bt align-center">
+            <div class="top full-width">
+                <div class="full-width flex justify-end align-center">
+                    <button type="button"><img src="./assets/svg/cross.svg" alt="Button to close the sidebar."></button>
+                </div>
+                <ul>
+                    <li><h3 class="fw-200">Dashboard</h3></li>
+                    <li><h3 class="fw-200">Points & Rewards</h3></li>
+                    <li><h3 class="fw-200">Settings</h3></li>
+                </ul>
+                <div class="language-dialog flex align-center justify-sp-bt">
+                    <div class="dialog-logo flex align-center justify-sp-bt gap-10px">
+                        <img src="./assets/svg/globe-white.svg" alt="Logo of a globe.">
+                        <h4 class="language-dialog-name">English</h4>
+                    </div>
+                    <img src="./assets/svg/chevron-right-white.svg" alt="Down arrow button for languages.">
+                </div>
+            </div>
+            <div class="bottom full-width">
+                <button type="button">Logout</button>
+            </div>
+        </aside>
+    </section>
+</body>
+<script>
+    const toggleBtns = document.querySelectorAll(".settings-toggle");
+    for (let i = 0; i < toggleBtns.length; i++) {
+        toggleBtns[i].addEventListener("click", function() {
+            for (let j = 0; j < toggleBtns.length; j++) {
+                toggleBtns[j].classList.remove("selected");
+            }
+            this.classList.add("selected");
+
+            switch(i) {
+                case 0:
+                    document.querySelector(".transactions-table").style.display = "none";
+                    document.querySelector(".user-contact-info").style.display = "flex";
+                    document.querySelector(".user-details").style.display = window.screen.width < 1024 ? "flex" : "grid";
+                    break;
+                case 1:
+                    document.querySelector(".user-contact-info").style.display = "none";
+                    document.querySelector(".user-details").style.display = "none";
+                    document.querySelector(".transactions-table").style.display = "table";
+                    break;
+                default:
+                    break;
+            }
+        });
+    }
+    document.querySelector(".notifications-btn").addEventListener("click", () => {
+        const notifs = document.querySelector(".notifications");
+        notifs.style.display = notifs.style.display === "flex" ? "none" : "flex";
+    });
+</script>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;display=swap">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/dash-notifications.css">
+    <link rel="stylesheet" href="./css/dash-success.css">
+    <link rel="stylesheet" href="./css/popup-categories.css">
+    <link rel="stylesheet" href="./css/dash-success.css">
+    <link rel="stylesheet" href="./css/popup-form.css">
+    <link rel="stylesheet" href="./css/input.css">
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <link rel="stylesheet" href="./css/dashboard-pts.css">
+</head>
+<body>
+    <section class="body">
+        <header class="pts-dash-header">
+            <nav class="dash-nav full-width">
+                <div class="dash-links flex justify-start align-center">
+                    <h2>Gurupuraskar</h2>
+                    <ul class="desktop-controls">
+                        <li><a href="dashboard.html"><h4 class="fw-200">Dashboard</h4></a></li>
+                        <li class="selected"><a href="dashboard-pts.html"><h4 class="fw-200">Points & Rewards</h4></a></li>
+                        <li><a href="dashboard-settings.html"><h4 class="fw-200">Settings</h4></a></li>
+                    </ul>
+                </div>
+                <div class="controls flex gap-20px">
+                    <button class="notifications-btn margin-top-5px position-relative" type="button" title="Mobile menu button">
+                        <img src="./assets/svg/bell.svg" alt="">
+                        <div class="circle flex justify-center align-center">5</div>
+                    </button>
+                    <button class="hamburger-btn" type="button" title="Mobile menu button">
+                        <img src="./assets/svg/menu-btn.svg" alt="">
+                    </button>
+                    <button type="button" class="language-dialog flex align-center justify-sp-bt">
+                        <div class="dialog-logo flex align-center justify-sp-bt gap-10px">
+                            <img src="./assets/svg/globe.svg" alt="Logo of a globe.">
+                            <h3 class="language-dialog-name fw-200">English</h3>
+                        </div>
+                        <img src="./assets/svg/chevrondown.svg" alt="Down arrow button for languages.">
+                    </button>
+                    <button type="button" class="logout-btn flex justify-center align-center">
+                        <h3 class="fw-200">Logout</h3>
+                    </button>
+                </div>
+                <div class="notifications border-radius-10px position-absolute flex column align-start">
+                    <h3>Notifications</h3>
+                    <div class="notifications-container full-width flex column gap-10px">
+                        <div class="notif border-radius-5px flex column gap-10px">
+                            <h5 class="content fw-200">You have received 70 RP from a review.</h5>
+                            <h5 class="time fw-200">10:20PM 23/05/2023</h5>
+                        </div>
+                        <div class="notif border-radius-5px flex column gap-10px">
+                            <h5 class="content fw-200">You have received 70 RP from a review.</h5>
+                            <h5 class="time fw-200">10:20PM 23/05/2023</h5>
+                        </div>
+                        <div class="notif border-radius-5px flex column gap-10px">
+                            <h5 class="content fw-200">You have received 70 RP from a review.</h5>
+                            <h5 class="time fw-200">10:20PM 23/05/2023</h5>
+                        </div>
+                        <div class="notif border-radius-5px flex column gap-10px">
+                            <h5 class="content fw-200">You have received 70 RP from a review.</h5>
+                            <h5 class="time fw-200">10:20PM 23/05/2023</h5>
+                        </div>
+                        <div class="notif border-radius-5px flex column gap-10px">
+                            <h5 class="content fw-200">You have received 70 RP from a review.</h5>
+                            <h5 class="time fw-200">10:20PM 23/05/2023</h5>
+                        </div>
+                        <div class="notif border-radius-5px flex column gap-10px">
+                            <h5 class="content fw-200">You have received 70 RP from a review.</h5>
+                            <h5 class="time fw-200">10:20PM 23/05/2023</h5>
+                        </div>
+                        <div class="notif border-radius-5px flex column gap-10px">
+                            <h5 class="content fw-200">You have received 70 RP from a review.</h5>
+                            <h5 class="time fw-200">10:20PM 23/05/2023</h5>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            
+            <section class="pts-avail-section flex ">
+                <div class="pts-avail-option full-width flex column">
+                    <div class="pts-title full-width flex justify-start align-center gap-10px">
+                        <img src="./assets/svg/point-green.svg" alt="">
+                        <div class="flex column align-start justify-center">
+                            <h4 class="fw-200">Activated Reward Points</h4>
+                            <div class="flex justify-start align-center gap-5px">
+                                <h2 class="fw-200">1,000</h2>
+                                <h5 class="fw-200">ARP</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="get-arp-btn" type="button" class="full-width flex justify-sp-ard align-center">
+                        <h3>Get ARP</h3>
+                        <img src="./assets/svg/right-arrow.svg" alt="">
+                    </button>
+                </div>
+
+                <div class="pts-avail-option full-width flex column">
+                    <div class="pts-title full-width flex justify-start align-center gap-10px">
+                        <img src="./assets/svg/point-gold.svg" alt="">
+                        <div class="flex column align-start justify-center">
+                            <h4 class="fw-200">Reward Points</h4>
+                            <div class="flex justify-start align-center gap-5px">
+                                <h2 class="fw-200">1,000</h2>
+                                <h5 class="fw-200">RP</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="score-display flex">
+                        <h3>Your Score: 23,000</h3>
+                    </div>
+                </div>
+
+                <div class="pts-avail-option full-width flex column">
+                    <div class="pts-title full-width flex justify-sp-bt align-center gap-10px">
+                        <h4 class="fw-200">
+                            Redeem points on Game of Giving application
+                        </h4>
+                        <img class="stars" src="./assets/svg/stars.svg" alt="">
+                    </div>
+                    <button class="redeem-btn flex justify-sp-ard align-center">
+                        <h3>Redeem ARP</h3>
+                        <img src="./assets/svg/right-arrow-black.svg" alt="">
+                    </button>
+                </div>
+            </section>
+        </header>
+
+        <main>
+            <article class="user-activity full-width">
+                <div class="invite-section flex">
+                    <h4 class="fw-200 text-center">Invite teachers and you both earn 100 RP each</h4>
+                    <div class="inputs flex">
+                        <div class="mobile-num-input flex justify-sp-bt align-center gap-5px">
+                            <input type="tel" name="" id="" placeholder="Enter mobile number">
+                            <button class="invite-btn">INVITE</button>
+                        </div>
+                        <div class="referral-code flex justify-sp-bt align-center">
+                            <h4>Referral Code:</h4>
+                            <h4 class="fw-200">DGV3467</h4>
+                            <button class="copy-btn">COPY</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="points-table">
+                    <div class="title">
+                        <h4>Points Activity</h4>
+                        <div class="navigators flex justify-sp-bt align-center">
+                            <button class="selected">All</button>
+                            <button class="">ARP</button>
+                            <button class="">RP</button>
+                            <button class="">Referrals</button>
+                        </div>
+                    </div>
+                    <table class="full-width">
+                        <thead>
+                            <tr>
+                                <th>Activity</th>
+                                <th>From</th>
+                                <th>Date</th>
+                                <th>Points</th>
+                                <th>Balance</th>
+                            </tr>
+                        </thead>
+                        <tbody class="full-width">
+                            <tr>
+                                <td>Registration</td>
+                                <td class="flex align-center gap-10px">
+                                    <img src="./assets/svg/avatar-man.svg" alt="">
+                                    Gurupuraskar
+                                </td>
+                                <td>20/05/2023</td>
+                                <td>+1000 ARP</td>
+                                <td>1000 ARP</td>
+                            </tr>
+                            <tr>
+                                <td>Registration</td>
+                                <td class="flex align-center gap-10px">
+                                    <img src="./assets/svg/avatar-man.svg" alt="">
+                                    Gurupuraskar
+                                </td>
+                                <td>20/05/2023</td>
+                                <td>+1000 ARP</td>
+                                <td>1000 ARP</td>
+                            </tr>
+                            <tr>
+                                <td>Referral points</td>
+                                <td class="flex align-center gap-10px">
+                                    <img src="./assets/svg/avatar-woman.svg" alt="">
+                                    Gurupuraskar
+                                </td>
+                                <td>20/05/2023</td>
+                                <td>+1000 ARP</td>
+                                <td>1000 ARP</td>
+                            </tr>
+                            <tr>
+                                <td>Referral points</td>
+                                <td class="flex align-center gap-10px">
+                                    <img src="./assets/svg/avatar-woman.svg" alt="">
+                                    Gurupuraskar
+                                </td>
+                                <td>20/05/2023</td>
+                                <td>+1000 ARP</td>
+                                <td>1000 ARP</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+        </main>
+    </section>
+    <section class="sidebar-bg">
+        <aside class="sidebar flex column justify-sp-bt align-center">
+            <div class="top full-width">
+                <div class="full-width flex justify-end align-center">
+                    <button class="sidebar-close-btn" type="button"><img src="./assets/svg/cross.svg" alt="Button to close the sidebar."></button>
+                </div>
+                <ul>
+                    <li><h3 class="fw-200">Dashboard</h3></li>
+                    <li><h3 class="fw-200">Points & Rewards</h3></li>
+                    <li><h3 class="fw-200">Settings</h3></li>
+                </ul>
+                <div class="language-dialog flex align-center justify-sp-bt">
+                    <div class="dialog-logo flex align-center justify-sp-bt gap-10px">
+                        <img src="./assets/svg/globe-white.svg" alt="Logo of a globe.">
+                        <h4 class="language-dialog-name">English</h4>
+                    </div>
+                    <img src="./assets/svg/chevron-right-white.svg" alt="Down arrow button for languages.">
+                </div>
+            </div>
+            <div class="bottom full-width">
+                <button type="button">Logout</button>
+            </div>
+        </aside>
+    </section>
+    <section class="success-popup-bg flex justify-center align-center">
+        <section class="success-popup flex column justify-sp-bt align-center">
+            <div class="topbar full-width flex column justify-center align-center gap-10px">
+                <img src="./assets/video/success.gif" alt="Success gif">
+                <h1>78 points</h1>
+                <h4 class="fw-200">Recieved!</h4>
+            </div>
+            <div class="bottombar full-width flex justify-center column align-center gap-10px">
+                <button id="continue-btn" type="button" class="full-width flex justify-sp-ard align-center">
+                    <h3>Continue</h3>
+                    <img src="./assets/svg/right-arrow.svg" alt="">
+                </button>
+            </div>
+        </section>
+    </section>
+    <section class="points-converter-bg flex justify-center">
+        <div class="points-converter flex column align-center">
+            <div class="topbar full-width flex column justify-center align-center">
+                <h3 class="text-center">Get Activated Reward Points</h3>
+                <div class="full-width flex column align-center">
+                    <div class="input-field full-width flex column align-start gap-5px">
+                        <span class="input-field-title flex full-width justify-start gap-10px">
+                            <h5 class="fw-200" id="input-field-title">Email</h5>
+                        </span>
+                        <input type="text" name="" id="">
+                    </div>
+                    <h5 id="user-scores" class="fw-200">You have <strong>1000</strong> ARP / <strong>1000</strong> RP</h5>
+                </div>
+            </div>
+            <div class="bottombar full-width flex column justify-center align-center gap-10px">
+                <button id="convert-arp-btn" class="flex justify-sp-bt align-center">
+                    <h4>Convert RP to ARP</h4>
+                    <img src="./assets/svg/right-arrow.svg" alt="">
+                </button>
+                <button class="flex justify-sp-bt align-center">
+                    <h4>Donate to get ARP</h4>
+                    <img src="./assets/svg/right-arrow.svg" alt="">
+                </button>
+                <button>
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    document.querySelector(".hamburger-btn").addEventListener("click", () => {
+        document.querySelector(".sidebar-bg").style.display = "flex";
+    });
+
+    document.querySelector(".sidebar-close-btn").addEventListener("click", () => {
+        document.querySelector(".sidebar-bg").style.display = "none";
+    });
+
+    document.querySelector(".notifications-btn").addEventListener("click", () => {
+        const notifs = document.querySelector(".notifications");
+        notifs.style.display = notifs.style.display === "flex" ? "none" : "flex";
+    });
+
+    document.querySelector("#get-arp-btn").addEventListener("click", () => {
+        document.querySelector(".points-converter-bg").style.display = "flex";
+    });
+
+    document.querySelector("#convert-arp-btn").addEventListener("click", () => {
+        document.querySelector(".points-converter-bg").style.display = "none";
+        document.querySelector(".success-popup-bg").style.display = "flex";
+    });
+
+    document.querySelector("#continue-btn").addEventListener("click", () => {
+        document.querySelector(".success-popup-bg").style.display = "none";
+    });
+</script>
+</html>
